@@ -1,0 +1,43 @@
+Slide 1: The Concept
+
+Title: Effective Context Engineering: The Core Idea
+
+What is it?
+
+The natural evolution of prompt engineering.
+
+Managing the entire set of information (context) for an AI agent.
+
+Why is it Critical?
+
+An AI's context window is a limited "attention budget."
+
+"Context Rot": Performance degrades as the context window fills with information.
+
+The Goal
+
+Find the smallest possible set of high-signal tokens to get the desired result.
+
+Primary Strategy
+
+"Just in Time" Context: Instead of pre-loading, have agents use tools to fetch data precisely when needed.
+
+Slide 2: The Techniques
+
+Title: Context Engineering: Advanced Techniques
+
+For Efficient Design:
+
+Prompts: Be clear and direct; not too vague, not too rigid.
+
+Tools: Design them to be token-efficient and functionally distinct.
+
+Examples: Use a few diverse, canonical examples (not an exhaustive list).
+
+For Long-Horizon Tasks (Beyond the Context Window):
+
+Compaction: Summarize the history and start a new context with the summary.
+
+Structured Note-Taking: The agent writes to and reads from an external "memory" file.
+
+Sub-agents: A "manager" agent coordinates specialized sub-agents to handle focused tasks.
